@@ -1,9 +1,14 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
 function Layout() {
   return (
-    <div>
-      <div className="flex flex-col md:flex-row md:justify-between"></div>
+     <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <main className="container mx-auto px-4 py-8">
+        <Outlet />
+      </main>
     </div>
   );
 }

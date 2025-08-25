@@ -12,6 +12,11 @@ import ForgotPassword from "./components/forgotPassword/ForgotPassword";
 import ResetPassword from "./components/forgotPassword/ResetPassword";
 import axios from "./Axios/axios.js";
 import Shifts from "./components/Shifts/Shifts";
+import ShiftDetails from "./components/Shifts/ShiftDetails";
+import CreateShift from './components/Shifts/CreateShift';
+import EditShift from './components/Shifts/EditShift';
+
+
 
 function App() {
   const storedToken = JSON.parse(localStorage.getItem("authToken"));
@@ -61,6 +66,9 @@ function App() {
               path="resetPassword"
               element={userToken ? <Navigate to="/" /> : <ResetPassword />}
             />
+            <Route path="/shifts/:id" element={<ShiftDetails />} />
+            <Route path="/shifts/create" element={<CreateShift />} />
+            <Route path="/shifts/:id/edit" element={<EditShift />} />
           </Route>
         </Routes>
       </TokenContext.Provider>
