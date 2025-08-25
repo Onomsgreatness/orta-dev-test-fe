@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Onome's Update, Overview of New Shift Implementation Features
+Create features, such as:
+  DASH Board, allowing users to see their shifts
+  Shift Detail page which goes indepth on the details
+  Create Shift interface, allowing users to create shifts
+  Edit and Delete Shift on the Shift Detail page
+
 ## Available Scripts
 
 In the project directory, you can run:
